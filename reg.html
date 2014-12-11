@@ -53,8 +53,7 @@
 
     <div class="b-reg-forms" data-forms-holder>
 
-        <div class="b-reg-form" data-form="1">
-
+        <form action="#" class="b-reg-form" data-form="1">
             <h2 class="form__title">Заявка на работу для новичков</h2>
 
             <div class="form__row">
@@ -77,6 +76,28 @@
             </div>
 
             <div class="form__row">
+                <div class="form__field">
+                    <label>В каких странах вы бывали?</label>
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+                <div class="form__col">
+                    <div class="form__field">
+                        <label>Какие языки вы знаете?</label>
+                        <textarea class="small-textarea" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__field">
+                    <label>Ваше резюме с фото</label>
+                    <div class="form__field_file">
+                        <div class="form__field_file_text">
+                            <a class="form__field_file_text_title_1"><span>Приложить файл</span></a>
+                        </div>
+                        <input type="file" name="resume" autocomplete="off" required data-file-input="true" />
+                    </div>
+                </div>
                 <div class="form__col">
                     <div class="form__field">
                         <label><sup>*</sup> Символы с картинки</label>
@@ -88,21 +109,17 @@
                 </div>
 
                 <div class="form__field">
-                    <label>Комментарий к заявке</label>
-                    <textarea cols="30" rows="10"></textarea>
+                    <label>&nbsp;</label>
+                    <div class="form__submit">
+                        <a class="form__submit-btn">Отправить заявку</a>
+                        <p>* Обязательно заполните поля со звездочкой</p>
+                    </div>
                 </div>
             </div>
+        </form><!-- /.b-reg-form -->
 
-            <div class="form__submit">
-                <a class="form__submit-btn">Отправить заявку</a>
-                <p>* Обязательно заполните поля со звездочкой</p>
-            </div>
-
-        </div><!-- /.b-reg-form -->
-
-        <div class="b-reg-form" data-form="2">
-
-            <h2 class="form__title">Заявка на на работу для профессионалов</h2>
+        <form action="#" class="b-reg-form" data-form="2">
+            <h2 class="form__title">Заявка на работу для профессионалов</h2>
 
             <div class="form__row">
                 <div class="form__field">
@@ -124,6 +141,28 @@
             </div>
 
             <div class="form__row">
+                <div class="form__field">
+                    <label>В каких странах вы бывали?</label>
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+                <div class="form__col">
+                    <div class="form__field">
+                        <label>Какие языки вы знаете?</label>
+                        <textarea class="small-textarea" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__field">
+                    <label>Ваше резюме с фото</label>
+                    <div class="form__field_file">
+                        <div class="form__field_file_text">
+                            <a class="form__field_file_text_title_1"><span>Приложить файл</span></a>
+                        </div>
+                        <input type="file" name="resume" autocomplete="off" required data-file-input="true" />
+                    </div>
+                </div>
                 <div class="form__col">
                     <div class="form__field">
                         <label><sup>*</sup> Символы с картинки</label>
@@ -135,17 +174,14 @@
                 </div>
 
                 <div class="form__field">
-                    <label>Комментарий к заявке</label>
-                    <textarea cols="30" rows="10"></textarea>
+                    <label>&nbsp;</label>
+                    <div class="form__submit">
+                        <a class="form__submit-btn">Отправить заявку</a>
+                        <p>* Обязательно заполните поля со звездочкой</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="form__submit">
-                <a class="form__submit-btn">Отправить заявку</a>
-                <p>* Обязательно заполните поля со звездочкой</p>
-            </div>
-
-        </div><!-- /.b-reg-form -->
+        </form><!-- /.b-reg-form -->
 
     </div><!-- /.b-reg-forms -->
 

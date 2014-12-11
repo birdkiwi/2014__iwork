@@ -574,5 +574,13 @@ $(document).ready(function(){
     }
 
     $('[data-show-service]').hoverIntent(hoverIntentOpts);
+
+    $('[data-file-input]').each(function(){
+       $(this).change(function(){
+           var file = $(this)[0].files;
+           console.log(file);
+           $(this).siblings('.form__field_file_text').find('.form__field_file_text_title_1 span').html(file[0].name)
+       });
+    });
 });
 
