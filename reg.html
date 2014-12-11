@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1000" >
+    <title>Template</title>
+
+    <link rel="stylesheet" href="css/master.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/fallback/html5shiv.js"></script>
+    <script src="js/fallback/respond.min.js"></script>
+    <script src="js/fallback/es5-shim.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="b-page p-reg p-reg--step-1" data-p-reg>
+
+    <header class="b-header">
+
+        <div class="b-header__container">
+
+            <a href="index.html" class="b-header__logo"></a>
+
+            <ul class="b-header__reg-list b-reg-list" data-form-options>
+                <li>
+                    <a class="item-1" data-form="1">Новичок</a>
+                </li>
+                <li>
+                    <a class="item-2" data-form="2">Профи</a>
+                </li>
+            </ul>
+
+        </div><!-- /.b-header__container -->
+
+    </header><!-- /.b-header -->
+
+    <div class="b-reg-start">
+        <h2>Заявка на подключение</h2>
+        <p>Кто вы?</p>
+        <ul class="b-reg-list" data-start-options>
+            <li>
+                <a class="item-1" data-form="1">Новичок</a>
+            </li>
+            <li>
+                <a class="item-2" data-form="2">Профи</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="b-reg-forms" data-forms-holder>
+
+        <div class="b-reg-form" data-form="1">
+
+            <h2 class="form__title">Заявка на работу для новичков</h2>
+
+            <div class="form__row">
+                <div class="form__field">
+                    <label><sup>*</sup> Название вашей компании</label>
+                    <input type="text"/>
+                </div>
+                <div class="form__field">
+                    <label><sup>*</sup> Телефон</label>
+                    <input type="text"/>
+                </div>
+                <div class="form__field">
+                    <label><sup>*</sup> E-mail</label>
+                    <input class="error" type="text"/>
+                    <div class="form__error">
+                        Поле заполнено
+                        некорректно
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__col">
+                    <div class="form__field">
+                        <label><sup>*</sup> Символы с картинки</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="form__field captcha">
+                        <img src="img/tmp/captcha.png" alt=""/>
+                    </div>
+                </div>
+
+                <div class="form__field">
+                    <label>Комментарий к заявке</label>
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <div class="form__submit">
+                <a class="form__submit-btn">Отправить заявку</a>
+                <p>* Обязательно заполните поля со звездочкой</p>
+            </div>
+
+        </div><!-- /.b-reg-form -->
+
+        <div class="b-reg-form" data-form="2">
+
+            <h2 class="form__title">Заявка на на работу для профессионалов</h2>
+
+            <div class="form__row">
+                <div class="form__field">
+                    <label><sup>*</sup> Название вашей компании</label>
+                    <input type="text"/>
+                </div>
+                <div class="form__field">
+                    <label><sup>*</sup> Телефон</label>
+                    <input type="text"/>
+                </div>
+                <div class="form__field">
+                    <label><sup>*</sup> E-mail</label>
+                    <input class="error" type="text"/>
+                    <div class="form__error">
+                        Поле заполнено
+                        некорректно
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__col">
+                    <div class="form__field">
+                        <label><sup>*</sup> Символы с картинки</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="form__field captcha">
+                        <img src="img/tmp/captcha.png" alt=""/>
+                    </div>
+                </div>
+
+                <div class="form__field">
+                    <label>Комментарий к заявке</label>
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <div class="form__submit">
+                <a class="form__submit-btn">Отправить заявку</a>
+                <p>* Обязательно заполните поля со звездочкой</p>
+            </div>
+
+        </div><!-- /.b-reg-form -->
+
+    </div><!-- /.b-reg-forms -->
+
+</div><!-- /.b-page -->
+
+<script src="js/build/production.min.js"></script>
+
+</body>
+</html>
