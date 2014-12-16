@@ -582,5 +582,24 @@ $(document).ready(function(){
            $(this).siblings('.form__field_file_text').find('.form__field_file_text_title_1 span').html(file[0].name)
        });
     });
+
+    $('[data-tooltip!=""]').qtip({
+        content: {
+            attr: 'data-tooltip'
+        },
+        position: {
+            my: 'bottom center',  // Position my top left...
+            at: 'top center'
+        },
+        style: {
+            classes: 'qtip-light qtip-shadow qtip-rounded',
+            tip: {
+                corner: true,
+                width: 20,
+                height: 10,
+                border: 0
+            }
+        }
+    });
 });
 

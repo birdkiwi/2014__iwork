@@ -33,6 +33,7 @@ module.exports = function(grunt) {
                     'js/jquery.js',
                     'js/wow.js',
                     'js/hoverintent.js',
+                    'js/jquery.qtip/jquery.qtip.min.js',
                     'js/app.js'
                 ],
                 dest: 'js/build/production.js'

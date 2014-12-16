@@ -857,12 +857,11 @@
 
 .b-prices
 {
-  background: #ff8d42;
+  background: #b34870;
 
   &__container
   {
     .i-container;
-    height: 700px;
     color: #ffffff;
   }
 
@@ -883,7 +882,7 @@
     {
       margin: 0;
       .ff-arial;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 25px;
       text-align: center;
       padding: 0 160px;
@@ -894,10 +893,11 @@
   table
   {
     .ff-arial;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
-    width: 962px;
-    margin: 0 auto;
+    width: 990px;
+    margin: 0 auto 40px;
+    table-layout: fixed;
   }
 
 
@@ -909,7 +909,8 @@
     border-bottom: 1px solid #ffffff;
     text-align: center;
     width: 25%;
-    vertical-align: middle;
+    vertical-align: top;
+    padding: 20px 18px;
 
     strong
     {
@@ -923,7 +924,7 @@
     p
     {
       margin: 0;
-
+      line-height: 16px;
     }
   }
 
@@ -951,13 +952,13 @@
 
   th
   {
-    background: #ff7f3b;
+    background: #b34870;
     font-weight: normal;
-    padding: 16px 0 15px;
+    padding: 18px;
     .transition(background, 0.15s,linear);
     &:hover
     {
-      background: darken(#ff7f3b, 5%);
+      background: darken(#b34870, 5%);
     }
     strong
     {
@@ -965,23 +966,31 @@
     }
     p
     {
-      padding: 5px 10px 4px;
       font-size: 14px;
     }
   }
 
   td
   {
-    background: #ff8d42;
-    padding: 13px 0 26px;
+    background: #b34870;
+    padding: 18px;
     .transition(background, 0.15s,linear);
-    strong, p
+  }
+
+  tr:hover
+  {
+    td
     {
-      padding: 0 10px;
+      background: darken(#b34870, 5%);
     }
-    &:hover
-    {
-      background: darken(#ff8d42, 5%);
+  }
+
+  .heading-medium {
+    vertical-align: middle;
+
+    strong {
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 }

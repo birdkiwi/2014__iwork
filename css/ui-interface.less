@@ -75,7 +75,7 @@
   }
 }
 
-.ui-form-input-text(@width, @height)
+.ui-form-input-text(@width, @height, @margin:0)
 {
   width: @width - 20px - 2px;
   height: @height - 2px;
@@ -86,7 +86,7 @@
   color: #777777;
   font-size: 14px;
   line-height: @height;
-  margin: 0;
+  margin: @margin;
   outline: none;
   .border-radius(2px);
   &.error
@@ -114,4 +114,13 @@
   {
     border-color: #af4343;
   }
+}
+
+.ui-icon-tooltip-white
+{
+  .sprite(@icon-tooltip-white);
+  width: @icon-tooltip-white-width;
+  height: @icon-tooltip-white-height;
+  display: inline-block;
+  cursor: help;
 }

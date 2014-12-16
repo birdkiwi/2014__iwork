@@ -241,6 +241,11 @@
     &__row
     {
       padding: 0 0 20px 0;
+
+      &:last-child
+      {
+        padding: 0;
+      }
     }
     &__field,
     &__col
@@ -321,7 +326,7 @@
       text-align: center;
       p
       {
-        margin: 9px 0 0 0;
+        margin: 15px 0 0 0;
         color: #959aa9;
         font-size: 12px;
         .ff-arial;
@@ -358,7 +363,9 @@
     }
   }
 
-  input[type="text"]
+  input[type="text"],
+  input[type="email"],
+  input[type="password"]
   {
     .ui-form-input-text(270px, 40px);
   }
